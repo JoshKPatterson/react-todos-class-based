@@ -3,12 +3,13 @@ import React, { Component } from 'react'
 class NewTodo extends Component {
   state = { term: '' };
   onSubmit = () => {
-    this.props.addTodo(Math.floor(Math.random()*1000000), this.state.term)
+    this.props.addTodo(Math.floor(Math.random()*1000000), this.state.term);
+    this.setState({ term: '' })
   }
   render() {
     return (
       <div>
-        New Todo
+        New To-Do
         <br />
         <input
           type='text' 
