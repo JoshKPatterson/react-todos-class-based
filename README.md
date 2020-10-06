@@ -1,5 +1,9 @@
 # To-Do List
 ### This is a basic React project made by Joshua Patterson. (https://github.com/JoshKPatterson)
+
+### Live version available here:
+### https://joshkpatterson.github.io/react-todos-class-based/
+
 ## What is it?
 This project is a functional To-Do list application utilizing class components.
 ## What does it show?
