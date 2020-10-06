@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 class NewTodo extends Component {
   state = { term: '' };
-  
+
   onSubmit = () => {
     this.props.addTodo(Math.floor(Math.random()*1000000), this.state.term);
     this.setState({ term: '' })
@@ -16,12 +16,12 @@ class NewTodo extends Component {
 
   render() {
     return (
-      <div>
+      <div className='newTodo'>
         New To-Do
         <br />
         <input
           type='text' 
-          placeholder='write todo here'
+          placeholder='Type new to-do here...'
           value={this.state.term}
           onChange={e => this.setState({term: e.target.value})}
           onKeyPress={this.keyPressed}

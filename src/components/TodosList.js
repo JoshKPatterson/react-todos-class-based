@@ -12,10 +12,7 @@ const TodosList = (props) => {
   })
   return (
     <div>
-      List of To-Dos
-      <hr />
       {todos}
-      <hr />
     </div>
   )
 }

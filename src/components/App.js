@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TodosList from './TodosList';
 import NewTodo from './NewTodo';
+import Header from './Header';
 
 export class App extends Component {
   state = {
@@ -35,7 +36,8 @@ export class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className='app'>
+        <Header />
         <TodosList todos={this.state.list} deleteTodo = {this.deleteTodo}/>
         <NewTodo addTodo={this.addTodo}/>
       </div>
