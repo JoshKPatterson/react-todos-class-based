@@ -36,7 +36,6 @@ h1 {
   -webkit-box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.12);
   -moz-box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.12);
   box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.12);
-  font-weight: 700;
 }
 
 .newTodo {
@@ -64,6 +63,7 @@ input {
   -moz-box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.12);
   box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.12);
   cursor: pointer;
+  font-weight: 700;
 }
 
 .todo button:hover{
