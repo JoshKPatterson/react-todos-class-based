@@ -1,0 +1,87 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 14pt
+}
+body {
+  margin: 0;
+  background: linear-gradient(to right, rgba(255, 247, 0, 0.5), rgba(0, 251, 255, 0.5));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  margin-top: 200px;
+  min-width: 400px
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+  height: 50px;
+  /* padding: 20px; */
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  padding: 0px 10px;
+  -webkit-box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.12);
+  -moz-box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.12);
+  box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.12);
+}
+
+.newTodo {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 10px;
+  margin: 10px 0px;
+  border: 1px solid rgb(248, 245, 245);
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.12);
+  -moz-box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.12);
+  box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.12);
+}
+
+.todo button {
+  background-color: rgba(255, 0, 0, 0.7);
+  border: none;
+  border-radius: 10px;
+  padding: 7px 15px;
+  -webkit-box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.12);
+  -moz-box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.12);
+  box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.12);
+  cursor: pointer;
+}
+
+.todo button:hover{
+  background-color: rgba(255, 0, 0, 0.9);
+
+}
+
+.newTodo button {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  -webkit-box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.12);
+  -moz-box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.12);
+  box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.12);
+  cursor: pointer;
+}
+
+.newTodo button:hover {
+  background-color: rgba(252, 252, 252, 1);
+
+}
