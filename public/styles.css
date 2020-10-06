@@ -14,8 +14,8 @@ body {
 }
 
 .app {
-  margin-top: 200px;
-  min-width: 400px
+  margin-top: 15vh;
+  /* min-width: 400px */
 }
 
 h1 {
@@ -85,4 +85,15 @@ input {
 .newTodo button:hover {
   background-color: rgba(252, 252, 252, 1);
 
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .app {
+    min-width: 350px
+  } 
+}
+
+@media only screen and (min-device-width : 481px) {
+  .app {
+    min-width: 400px;
+  }
 }
