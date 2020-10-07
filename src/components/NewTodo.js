@@ -4,6 +4,9 @@ class NewTodo extends Component {
   state = { term: '' };
 
   onSubmit = () => {
+    if(this.state.term === ''){
+      return
+    }
     this.props.addTodo(Math.floor(Math.random()*1000000), this.state.term);
     this.setState({ term: '' })
   }
