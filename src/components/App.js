@@ -12,11 +12,11 @@ export class App extends Component {
       },
       {
         key: 313,
-        name: 'Get Remote Job'
+        name: 'Get Developer Job'
       },
       {
         key: 412,
-        name: 'Leave Country'
+        name: 'Buy House'
       }
     ]
   };
