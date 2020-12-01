@@ -3,35 +3,23 @@ import TodosList from './TodosList';
 import NewTodo from './NewTodo';
 import Header from './Header';
 
+const localState = JSON.parse(localStorage.getItem('tasks')) || [];
+
 export class App extends Component {
-  state = {
-    list: [
-      {
-        key: 312,
-        name: 'Finish React Course'
-      },
-      {
-        key: 313,
-        name: 'Get Developer Job'
-      },
-      {
-        key: 412,
-        name: 'Buy House'
-      }
-    ]
-  };
+  state = { list: localState };
+
 
   addTodo = (key, name) => {
-    // console.log(this.state.list, prop)
     this.setState({
       list: [...this.state.list, {key: key, name: name}]
-    })
+    }, () => localStorage.setItem('tasks', JSON.stringify(this.state.list)) )
   }
 
   deleteTodo = (key) => {
     this.setState({
       list: this.state.list.filter(item => item.key !== key)
-    })
+    }, () => localStorage.setItem('tasks', JSON.stringify(this.state.list))
+    )
   }
 
   render() {
